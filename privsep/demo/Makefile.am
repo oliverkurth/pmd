@@ -3,6 +3,7 @@ noinst_LTLIBRARIES = libdemosrv.la
 libdemosrv_la_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     @LW_INCLUDES@
     
 libdemosrv_la_SOURCES = \
@@ -11,7 +12,7 @@ libdemosrv_la_SOURCES = \
     demorpcapi.c
 
 demo_privsep_sstub.c:
-	cp $(top_srcdir)/idl/demo_privsep_sstub.c .
+	cp $(top_builddir)/idl/demo_privsep_sstub.c .
 
 CLEANFILES = \
     demo_privsep_sstub.c

@@ -3,6 +3,7 @@ noinst_LTLIBRARIES = libusermgmtcli.la
 libusermgmtcli_la_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     -I/opt/likewise/include 
 
 libusermgmtcli_la_SOURCES = \

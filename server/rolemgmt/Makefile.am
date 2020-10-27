@@ -3,6 +3,7 @@ noinst_LTLIBRARIES = librolemgmt.la
 librolemgmt_la_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     @LW_INCLUDES@ \
     @UUID_CFLAGS@
     

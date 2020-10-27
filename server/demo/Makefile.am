@@ -5,6 +5,7 @@ AM_CFLAGS += $(JANSSON_CFLAGS)
 libdemosrv_la_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     @LW_INCLUDES@
 
 libdemosrv_la_SOURCES = \

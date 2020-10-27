@@ -3,6 +3,7 @@ bin_PROGRAMS = pmdprivsepd
 pmdprivsepd_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     @LW_INCLUDES@ \
     @VMDIRCLI_INCLUDES@ \
     @VMAFD_INCLUDES@
@@ -33,15 +34,15 @@ pmdprivsepd_SOURCES = \
 SUBDIRS = demo
 
 privsepd_sstub.c:
-	cp $(top_srcdir)/idl/privsepd_sstub.c .
+	cp $(top_builddir)/idl/privsepd_sstub.c .
 pkgmgmt_privsep_sstub.c:
-	cp $(top_srcdir)/idl/pkgmgmt_privsep_sstub.c .
+	cp $(top_builddir)/idl/pkgmgmt_privsep_sstub.c .
 netmgmt_privsep_sstub.c:
-	cp $(top_srcdir)/idl/netmgmt_privsep_sstub.c .
+	cp $(top_builddir)/idl/netmgmt_privsep_sstub.c .
 fwmgmt_privsep_sstub.c:
-	cp $(top_srcdir)/idl/fwmgmt_privsep_sstub.c .
+	cp $(top_builddir)/idl/fwmgmt_privsep_sstub.c .
 usermgmt_privsep_sstub.c:
-	cp $(top_srcdir)/idl/usermgmt_privsep_sstub.c .
+	cp $(top_builddir)/idl/usermgmt_privsep_sstub.c .
 
 CLEANFILES = \
     privsepd_sstub.c \

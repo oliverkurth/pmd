@@ -5,6 +5,7 @@ AM_CFLAGS += $(COPENAPI_CFLAGS)
 pmd_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     @LW_INCLUDES@ \
     @CREST_INCLUDES@ \
     @VMDIRCLI_INCLUDES@ \

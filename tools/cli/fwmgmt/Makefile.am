@@ -3,6 +3,7 @@ noinst_LTLIBRARIES = libfwmgmtcli.la
 libfwmgmtcli_la_CPPFLAGS = \
     -I$(top_srcdir)/include \
     -I$(top_srcdir)/idl \
+    -I$(top_builddir)/idl \
     -I/opt/likewise/include 
 
 libfwmgmtcli_la_SOURCES = \
